@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> #18 - Planilha de Gastos</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-container">
+                    <h3>Orçamento</h3>
+                    <p class="hide error" id="budget-error"> Valor não pode ser vazio ou negativo </p>
+                    <button class="submit" id="total-amount-button"> Definir Orçamento</button>
+                </div>
+
+                <div class="user-amount-container">
+                    <h3>Despesas</h3>
+                    <p class="hide error" id="product-title-error"> Valores não podem ser vazios</p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Insira o titulo do produto">
+                    <input type="number" id="user-amount" placeholder="Insira o custo do produto">
+                    <button class="submit" id="check-amount"> Checar Quantidade</button>
+                </div>
+            </div>
+
+            <div class="output-container flex-space">
+                <div>
+                    <p> Orçamento total</p>
+                    <span id="amount">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <p>Despesas</p>
+                    <span id="expenditure-value">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <p>Saldo</p>
+                    <span id="balance-amount">
+                        0
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <h3> Lista de Despesas</h3>
+            <div class="list-container" id="list"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
